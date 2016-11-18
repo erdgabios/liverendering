@@ -8,14 +8,62 @@
 
 import UIKit
 
+@IBDesignable
 class PieView: UIView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    
+    var backgroundLayer: CAShapeLayer!
+    @IBInspectable var backgroundLayerColor: UIColor = UIColor.darkGray { didSet {updateLayerProperties()}
     }
-    */
+    var backgroundImageLayer: CALayer!
+    @IBInspectable var backgroundImage: UIImage? {
+        didSet {updateLayerProperties()}
+    }
+    var ringLayer: CAShapeLayer!
+    @IBInspectable var ringThickness: CGFloat = 2
+    @IBInspectable var ringColor: UIColor = UIColor.blue
+    @IBInspectable var ringPercent: CGFloat = 0.75 {
+        didSet {updateLayerProperties()}
+    }
+    
+    var percentageLayer: CATextLayer!
+    @IBInspectable var showPercentage: Bool = true {
+        didSet {
+            updateLayerProperties()
+        }
+    }
+    @IBInspectable var percentagePosition = 100 {
+        didSet {
+            updateLayerProperties()
+        }
+    }
+    @IBInspectable var percentageColor: UIColor = UIColor.white {
+        didSet {
+            updateLayerProperties()
+        }
+    }
+    
+    var lineWidth:CGFloat = 1
+    
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        createChart()
+    }
+    
+    func createChart() {
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    func updateLayerProperties() {
+        
+    }
 
+    
 }
