@@ -2,6 +2,6 @@
 
 Xcode8, Swift3, ios10 - Live rendering
 
-![simulator screen shot 19 nov 2016 20 50 40](https://cloud.githubusercontent.com/assets/22255995/20458047/1cf00332-ae9a-11e6-9307-8829c5890eab.png)
+<img width="369" alt="liverendering" src="https://cloud.githubusercontent.com/assets/22255995/20458076/9c054290-ae9a-11e6-9232-f31d6f9f45b5.png">
 
 
